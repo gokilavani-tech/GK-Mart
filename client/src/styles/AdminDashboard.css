@@ -1,0 +1,161 @@
+.admin-page{
+    max-width:1300px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.admin-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.admin-title{
+    font-size:38px;
+    color:#1e293b;
+    font-weight:700;
+}
+
+.admin-count{
+    color:#64748b;
+    font-size:18px;
+    margin-top:8px;
+}
+
+.add-product-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-product-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 25px rgba(37,99,235,.25);
+}
+
+.admin-products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.admin-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:25px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.admin-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 35px rgba(37,99,235,.15);
+}
+
+.admin-card h3{
+    font-size:22px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.admin-card p{
+    margin:8px 0;
+    color:#475569;
+    font-size:15px;
+}
+
+.stock-out{
+    color:#ef4444;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.admin-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.edit-btn{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.delete-btn{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#ef4444;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+.access-denied{
+    max-width:500px;
+    margin:120px auto;
+    text-align:center;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.access-denied h1{
+    font-size:40px;
+    color:#ef4444;
+    margin-bottom:15px;
+}
+
+.access-denied p{
+    color:#64748b;
+    font-size:17px;
+}
+
+@media(max-width:768px){
+
+.admin-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.admin-title{
+    font-size:30px;
+}
+
+.admin-products{
+    grid-template-columns:1fr;
+}
+
+.admin-buttons{
+    flex-direction:column;
+}
+
+}
