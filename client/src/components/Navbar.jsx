@@ -26,8 +26,6 @@ function Navbar({ search, setSearch }) {
 
   return (
     <nav className="navbar">
-
-      {/* Logo */}
       <div className="logo">
         <span className="logo-icon">🛍️</span>
 
@@ -35,14 +33,10 @@ function Navbar({ search, setSearch }) {
           <h2>GK Mart</h2>
         </div>
       </div>
-
-      {/* Search */}
       <SearchBar
         search={search}
         setSearch={setSearch}
       />
-
-      {/* Menu */}
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
@@ -68,11 +62,7 @@ function Navbar({ search, setSearch }) {
           <Link to="/admin">Admin</Link>
         </li>
       </ul>
-
-      {/* Icons */}
       <div className="nav-icons">
-
-        {/* Wishlist */}
         <Link to="/wishlist" className="cart-link">
           <div className="cart-wrapper">
             <FaHeart className="icon" />
@@ -82,8 +72,6 @@ function Navbar({ search, setSearch }) {
             </span>
           </div>
         </Link>
-
-        {/* Cart */}
         <Link to="/cart" className="cart-link">
           <div className="cart-wrapper">
             <FaShoppingCart className="icon" />
@@ -93,8 +81,6 @@ function Navbar({ search, setSearch }) {
             </span>
           </div>
         </Link>
-
-        {/* User */}
         {user ? (
           <>
             <span className="user-name">
